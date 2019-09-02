@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaPizzaSlice} from 'react-icons/fa';
+import { FaPizzaSlice } from 'react-icons/fa';
 
 export const Header = () => {
 	return (
@@ -11,8 +11,8 @@ export const Header = () => {
       <ul>
         <li>+</li>
         <li>
-					<FaPizzaSlice />
-				</li>
+          <FaPizzaSlice />
+        </li>
       </ul>
     </div>
   </header>
