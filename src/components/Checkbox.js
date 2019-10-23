@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { firebase } from '../firebase';
+import React from "react";
+import PropTypes from "prop-types";
+import { firebase } from "../firebase";
 
 export const Checkbox = ({ id, taskDesc }) => {
   const archiveTask = () => {
     firebase
       .firestore()
-      .collection('tasks')
+      .collection("tasks")
       .doc(id)
       .update({
         archived: true,
@@ -30,5 +30,5 @@ export const Checkbox = ({ id, taskDesc }) => {
 
 Checkbox.propTypes = {
   id: PropTypes.string.isRequired,
-  taskDesc: PropTypes.string.isRequired,
+  taskDesc: PropTypes.string,
 };
